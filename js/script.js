@@ -57,7 +57,7 @@ guessButton.addEventListener("click", function (e) {
   e.preventDefault();
   const guess = letter.value;
   message.innerText = "";
-  console.log(guess);
+  // console.log(guess);
   goodGuess = playerInput(guess);
   
   if (goodGuess) {
@@ -86,7 +86,7 @@ const makeGuess = function (guess) {
   } else {
     guessedLetters.push(guess);
     displayGuessedLetters();
-    console.log(guessedLetters);
+    // console.log(guessedLetters);
     countGuessesRemaining(guess);
     updateWords(guessedLetters);
   }
